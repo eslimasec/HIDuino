@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Text2HID</title>
+</head>
+<body>
+<form action="#" name="myForm" onsubmit="text2HID();">
+Type down the text you want to convert to HID keyboard codes<br>
+<input type="text" name="content">
+<input type="submit" value="Convert">
+</form>
+<script>
+function text2HID(){
+	var dictionary = {};
+	dictionary["a"] = 4;
+	dictionary["b"] = 5;
+	dictionary["c"] = 6;
+	dictionary["d"] = 7;
+	dictionary["e"] = 8;
+	dictionary["f"] = 9;
+	dictionary["g"] = 10;
+	dictionary["h"] = 11;
+	dictionary["i"] = 12;
+	dictionary["j"] = 13;
+	dictionary["k"] = 14;
+	dictionary["l"] = 15;
+	dictionary["m"] = 16;
+	dictionary["n"] = 17;
+	dictionary["o"] = 18;
+	dictionary["p"] = 19;
+	dictionary["q"] = 20;
+	dictionary["r"] = 21;
+	dictionary["s"] = 22;
+	dictionary["t"] = 23;
+	dictionary["u"] = 24;
+	dictionary["v"] = 25;
+	dictionary["w"] = 26;
+	dictionary["x"] = 27;
+	dictionary["y"] = 28;
+	dictionary["z"] = 29;
+	dictionary["1"] = 30;
+	dictionary["2"] = 31;
+	dictionary["3"] = 32;
+	dictionary["4"] = 33;
+	dictionary["5"] = 34;
+	dictionary["6"] = 35;
+	dictionary["7"] = 36;
+	dictionary["8"] = 37;
+	dictionary["9"] = 38;
+	dictionary["0"] = 39;
+	dictionary[" "] = 44;
+	dictionary["-"] = 45;
+	dictionary["["] = 47;
+	dictionary["]"] = 48;
+	dictionary["\\"] = 49;
+	dictionary[";"] = 51;
+	dictionary[","] = 54;
+	dictionary["."] = 55;
+	dictionary["/"] = 56;
+	dictionary["*"] = 85;
+	dictionary["="] = 103;
+	dictionary["("] = 182;
+	dictionary[")"] = 183;
+	dictionary["{"] = 184;
+	dictionary["}"] = 185;
+	dictionary["<"] = 197;
+	dictionary[">"] = 198;
+	dictionary["&"] = 199;
+	dictionary["|"] = 201;
+	dictionary["!"] = 207;
+	var tbString = document.forms["myForm"]["content"].value;
+	for(var pos=0; pos<tbString.length; pos++) {
+		document.write(dictionary[tbString[pos]]+",");
+	}
+	document.write("<br>enter/intro code is: 40");
+}
+
+</script>
+</p>
+</body>
+</html>
