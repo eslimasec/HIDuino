@@ -1,4 +1,4 @@
 # HIDuino
-Support files for the HIDuino thingy
+Convert text to HID keyboard codes (a-z0-9 and some symbols are supported)
 
-I use http://htmlpreview.github.io/?https://github.com/eslimasec/HIDuino/blob/master/Text2HID.html to render it to HTML from GitHub
+Use this URL http://htmlpreview.github.io/?https://github.com/eslimasec/HIDuino/blob/master/Text2HID.html to render to HTML from GitHub.
